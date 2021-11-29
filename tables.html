@@ -5,22 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables Element Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #table-container{
+            background-color: azure;
+        }
+        table{
+            width: 60%;
+            margin: 30px auto;
+            background-color: white;
+        }
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 16px 12px;
+        }
+        th{
+background-color: rgb(235, 139, 139);
+        }
+        tr:nth-child(even){
+            background-color: whitesmoke;
+        }
+        h1{
+            font-size: 45px;
+            padding: 18px;
+        }
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: underline;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Products</h1>
+    
     <div id="table-container">
-        <caption>Products In Stock</caption>
-        <table>
+        <h1>Products</h1>
+        <table cellspacing= "2" >
+            <caption>Products In Stock</caption>
             <thead>
                 <tr>
-                    <th></th>
-                    <th>Product</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>Product</th>
-                    <th>Product</th>
+                    <th>Serial Number</th>
+                    <th colspan="2">Product</th>
+                    <th style="width: 25%;">Description</th>
+                    <th style="width: 20%;">Price</th>
                 </tr>
             </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="Images/accesories.jpeg" alt="Accessories" width="150px" height="150px"></td>
+                    <td>Sling bag & Heels</td>
+                    <td>Leather bag and designer heels</td>
+                    <td>$ 70</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="Images/fancy_tops.jpeg" alt="Fancy tops" width="150px" height="150px"></td>
+                    <td>Fancy Tops</td>
+                    <td>Colorful cotton women fancy tops</td>
+                    <td>$ 20</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="Images/romper.jpeg" alt="Romper" width="150px" height="150px"></td>
+                    <td>Rompers</td>
+                    <td>Colorful cotton rompers</td>
+                    <td>$ 30</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="Images/shoes.jpeg" alt="Men's shoe" width="150px" height="150px"></td>
+                    <td>Combo shoes and T-shirts</td>
+                    <td>Cotton T-shirts</td>
+                    <td>$ 20</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="Images/sweater-tops.jpeg" alt="Sweater tops" width="150px" height="150px"></td>
+                    <td>Sweater-tops</td>
+                    <td>Warm Sweater-tops</td>
+                    <td>$ 20</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>
