@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+<body>
+    <div class="header">
+        <h1>The Great
+            <span id="color-display">
+    <span id="r">R</span>
+    <span id="g">G</span>
+    <span id="b">B</span>
+    </span>
+    Guessing Game</h1>
+    </div>
+    <div class="stripe">
+        <button class="reset">Start</button>
+        <span id="message"></span>
+        <button class="mode">Easy</button>
+        <button class="mode-selected">Hard</button>
+    </div>
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <script type="text/javascript" src="guessingGame.js"></script>
+</body>
+</html>
